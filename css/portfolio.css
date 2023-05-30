@@ -1,0 +1,108 @@
+/* Start Global CSS For Whole Page*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+
+:root{
+    --springGreen:#00ce79;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background:var(--springGreen);
+    color:#333;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width:1.4rem;
+}
+
+html::-webkit-scrollbar-track{
+    background:#222;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--springGreen);
+}
+
+body{
+    background:#111;
+    overflow-x: hidden;
+    
+}
+
+
+
+/* End Global CSS For Whole Page*/
+
+
+/* Start Portfolio Section CSS */
+.portfolio .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+}
+
+.portfolio .box-container .box{
+    height: 20rem;
+    width:26rem;
+    border-radius: 1rem;
+    margin:2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.portfolio .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.portfolio .box-container .box:hover img{
+    transform: scale(1.2);
+}
+
+
+    .btn {
+        background-color: rgb(30, 34, 32);
+        color: rgb(47, 192, 59);
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        
+    }
+
+    .btn:hover {
+        background-color: rgb(17, 198, 77);
+    }
+
+    .box {
+        position: relative;
+      }
+      
+      .hidden-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      
+      .box:hover .hidden-img {
+        opacity: 1;
+      }
+/* End Portfolio Section CSS */
