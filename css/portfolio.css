@@ -47,6 +47,11 @@ body{
 
 /* End Global CSS For Whole Page*/
 
+.btn-home {
+    font-size: 20px; /* Adjust the font size as needed */
+    padding: 10px 20px; /* Adjust the padding as needed */
+  }
+
 
 /* Start Portfolio Section CSS */
 .portfolio .box-container{
