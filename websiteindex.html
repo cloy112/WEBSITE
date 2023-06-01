@@ -223,14 +223,19 @@
 
     </div>
 
-    <form action="https://script.google.com/macros/s/AKfycbyckLOq_k5SA9d2WTujWRy8WibkcI-wv9fpXigWJCd4GAKIIlRp_gxqLzlU9IWMq10muA/exec" method="post">
+    <form action="https://script.google.com/macros/s/AKfycbyckLOq_k5SA9d2WTujWRy8WibkcI-wv9fpXigWJCd4GAKIIlRp_gxqLzlU9IWMq10muA/exec" method="post" onsubmit="showPopup()">
       <input type="text" placeholder="name" name="name" class="box">
       <input type="email" placeholder="email" name="email" class="box">
       <textarea name="message" cols="30" rows="10" class="box message" placeholder="message"></textarea>
       <button type="submit" class="btn">send <i class="fas fa-paper-plane"></i></button>
     </form>
     
-    <div id="sent-dialog" style="display: none;">Sent!</div>
+    <script>
+      function showPopup() {
+        // Display a popup dialog box
+        alert("Form submitted successfully!");
+      }
+    </script>
 
 
    <a href="https://www.facebook.com/Cloyy034" class="social-link">
